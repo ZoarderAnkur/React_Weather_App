@@ -1,0 +1,248 @@
+h1{
+  display: block;
+  height: 64px;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  transition: 0.3s 1.4s;
+}
+.a{
+  max-width: 1500px;
+  margin: 0 auto;
+  height: calc(100vh - 64px);
+  width: 100%;
+  position: relative;
+}
+h4{
+  color: rgb(255, 255, 255);
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 0px;
+}
+h3{
+    color: #FFFFFF;
+  display: block;
+  font-weight:400;
+  font-size:20px;
+  text-align: left;
+  padding: 5px 0px;
+}
+h2{
+    color:#FFFFFF;
+  display: block;
+  font-weight:600;
+  font-size: 30px;
+  text-align: left;
+  padding: 5px 0;
+}
+.span1{
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+.span2{
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  margin-right: 10px;
+}
+.span3{
+  color: #ffffff;
+  font-size: 17px;
+}
+.span4{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translate(-50%, -50%);
+  height: 14px;
+  width: 14px;
+  font-size: 14px;
+  color: #c5c5c5;
+}
+.WeatherIcon{
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+.Results{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  top: 20px;
+  /* animation:  0.5s 1.4s forwards; */
+}
+.NotFoundWrapper{
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto 0;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  border-radius: 10px;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.ResultFadeIn{
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+.LocationWrapper{
+  flex-basis: 100%;
+}
+.CurrentWeatherWrapper{
+  flex-basis: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  margin: 20px 0;
+  grid-gap: 30px;
+}
+
+@media (min-width: 768px){
+.CurrentWeatherWrapper{
+    grid-template-columns: 1fr 1fr;
+    padding-right: 20px;
+
+}}
+
+
+  @media (min-width: 525px){
+.CurrentWeatherWrapper {
+    flex-basis: 50%;
+    padding-right: 10px;
+}
+}
+.WeatherIcon{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  color: #ffffff;
+}
+.WeatherIcon1{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+}
+.b{
+  text-align: left !important;
+}
+.Temperature{
+    display: block;
+  font-size: 50px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.WeatherDetailsWrapper{
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+  margin: 20px 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  align-self: flex-start;
+}
+@media (min-width: 525px){
+
+.WeatherDetailsWrapper {
+    flex-basis: 50%;
+}}
+.WeatherDetail{
+  /* flex-basis: calc(100% / 3);
+  padding: 10px; */
+  flex-basis: calc(33.3333%);
+  padding: 10px;
+}
+.ForecastWrapper{
+  flex-basis: 100%;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.ForecastW{
+  margin-left: 0px;
+  flex-shrink: 0;
+  flex-basis: 90px;
+  padding: 10px;
+  margin: 0px 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.Forecast{
+  position: relative;
+  display: flex;
+  overflow: scroll hidden;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+form{
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+  transition: 0.8s 0.5s;
+}
+input{
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 10px 15px 10px 40px;
+  color: #c5c5c5;
+  transition: 0.2s;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+body{
+  min-height: 100vh;
+  margin: 0 15px;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image:  url('../assets/2d20f2badf88ee44a725c687e3e6aff7.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.weather-app{
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
